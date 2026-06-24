@@ -1,0 +1,211 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirubbakaran S | Python Fullstack Developer</title>
+  <link href="...fonts..." rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">Hi its Kirubba <span class="dot">.</span></div>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+</header>
+
+ <section class="hero-wrapper" id="home">
+  <div class="hero">
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <img src="profile.jpg" alt="Kirubbakaran S" id="profileImg" />
+      </div>
+      <span class="status-badge">● Open to work</span>
+    </div>
+
+    <div class="hero-text">
+      <p class="hero-prompt"></p>
+      <h1>Kirubbakaran S</h1>
+      <h2 class="hero-title">Python Fullstack Developer</h2>
+      <p class="hero-intro">
+        I build clean, functional web applications — from responsive front-ends
+        to Python-powered back-ends and MySQL databases. Currently exploring
+        computer vision and automation alongside fullstack development.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="resume.pdf" download class="btn btn-outline">
+          ⬇ Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+   
+  <section class="about" id="about">
+    <p class="section-tag"></p>
+    <h2 class="section-heading">About Me</h2>
+
+    <div class="about-content">
+      <p>
+        I'm Kirubbakaran, an IT graduate from Tamil Nadu with hands-on training
+        in Python Fullstack Development. I enjoy turning ideas into working
+        software — combining HTML, CSS, and JavaScript on the front-end with
+        Python and MySQL on the back-end to build complete, usable applications.
+      </p>
+      <p>
+        My strongest project so far is a real-time <strong>Fire Detection
+        System</strong> built using Python, OpenCV, TensorFlow, and Keras —
+        where I trained a model to identify fire from live video feed and
+        trigger alerts. I'm currently sharpening my fullstack skills further
+        while taking on freelance IT support work.
+      </p>
+    </div>
+  </section>
+   <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="skills" id="skills">
+    <p class="section-tag"></p>
+    <h2 class="section-heading">Tech Stack</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML5</h3>
+        <p>Semantic structure & accessibility</p>
+      </div>
+      <div class="skill-card">
+        <h3>CSS3</h3>
+        <p>Responsive layouts, Flexbox & Grid</p>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>DOM manipulation & interactivity</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Scripting, automation & backend logic</p>
+      </div>
+      <div class="skill-card">
+        <h3>MySQL</h3>
+        <p>Relational database design & queries</p>
+      </div>
+      <div class="skill-card">
+        <h3>Git & GitHub</h3>
+        <p>Version control & collaboration</p>
+      </div>
+    </div>
+  </section>
+
+   <section class="projects" id="projects">
+    <p class="section-tag"></p>
+    <h2 class="section-heading">My Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card featured">
+        <span class="project-tag">Featured</span>
+        <h3>🔥 Fire Detection System</h3>
+        <p>
+          A real-time fire detection system using computer vision and deep
+          learning. Trained a CNN model with TensorFlow/Keras and used OpenCV
+          to process live video feed, triggering instant alerts on detection.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>Keras</span>
+        </div>
+        <a href="https://github.com/kirubbakaran" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-tag">Project</span>
+        <h3>🌐 Portfolio Website</h3>
+        <p>
+          This very website — a responsive personal portfolio built from
+          scratch with HTML, CSS, and JavaScript, designed to showcase my
+          fullstack journey.
+        </p>
+        <div class="project-stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://github.com/kirubbakaran" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-tag">Coming Soon</span>
+        <h3>🗄️ Fullstack CRUD App</h3>
+        <p>
+          A Python (Flask) + MySQL powered web application with full
+          Create, Read, Update, Delete functionality — currently in progress.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>Flask</span><span>MySQL</span>
+        </div>
+        <a href="#" class="project-link disabled">In Progress…</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact" id="contact">
+    <p class="section-tag"></p>
+    <h2 class="section-heading">Get In Touch</h2>
+    <p class="contact-subtext">
+      Have a project in mind or just want to say hi? My inbox is open.
+    </p>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p class="footer-prompt"></p>
+
+    <div class="social-links">
+      <a href="https://github.com/kirubbakaran" target="_blank" rel="noopener noreferrer" class="social-link">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/kirubba-karan-983879280" target="_blank" rel="noopener noreferrer" class="social-link">
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/kirubba_/" target="_blank" rel="noopener noreferrer" class="social-link">
+        Instagram
+      </a>
+      <a href="https://wa.me/918072921208" target="_blank" rel="noopener noreferrer" class="social-link">
+        WhatsApp
+      </a>
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span> Kirubbakaran S. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</body>
