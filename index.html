@@ -161,25 +161,30 @@
       Have a project in mind or just want to say hi? My inbox is open.
     </p>
 
-    <form class="contact-form" id="contactForm">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required />
-      </div>
+    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="PASTE_YOUR_ACCESS_KEY_HERE">
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required />
-      </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+  </div>
 
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
-      </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+  </div>
 
-      <button type="submit" class="btn btn-primary">Send Message</button>
-      <p class="form-status" id="formStatus"></p>
-    </form>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+  </div>
+
+  <!-- Honeypot spam protection (keep this hidden, don't remove) -->
+  <input type="checkbox" name="botcheck" style="display: none;">
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+  <p class="form-status" id="formStatus"></p>
+</form>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
