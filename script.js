@@ -15,8 +15,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // =====================================================
-// 2. CONTACT FORM — sends data directly to Web3Forms
+// 2. CONTACT FORM — sends data to your Flask + MySQL API
 // =====================================================
+const CONTACT_API_URL = 'https://portfolio-contact-api-bpqh.onrender.com/contact';
+
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
@@ -26,13 +28,18 @@ contactForm.addEventListener('submit', async function (e) {
   formStatus.textContent = 'Sending...';
   formStatus.style.color = '#8b97a8';
 
-  const formData = new FormData(contactForm);
+  const payload = {
+    name: contactForm.name.value,
+    email: contactForm.email.value,
+    message: contactForm.message.value,
+    botcheck: contactForm.botcheck.checked,
+  };
 
   try {
-    const response = await fetch(contactForm.action, {
+    const response = await fetch(CONTACT_API_URL, {
       method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
     });
 
     const result = await response.json();
@@ -42,7 +49,7 @@ contactForm.addEventListener('submit', async function (e) {
       formStatus.style.color = '#2dd4bf';
       contactForm.reset();
     } else {
-      formStatus.textContent = '⚠ Something went wrong. Please try again.';
+      formStatus.textContent = '⚠ ' + (result.error || 'Something went wrong. Please try again.');
       formStatus.style.color = '#f87171';
     }
   } catch (error) {
